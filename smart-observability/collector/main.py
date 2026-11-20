@@ -1,7 +1,7 @@
 import time
 import platform
 
-from collectors import (
+from host_probes import (
     collect_linux_auth_logs,
     collect_windows_security_logs,
     collect_bandwidth,
@@ -10,7 +10,7 @@ from collectors import (
     collect_application_telemetry
 )
 
-from csv_manager import save_to_csv, initialize_csv
+from local import save_to_csv, initialize_csv
 
 from config import (
     CSV_FILE,
