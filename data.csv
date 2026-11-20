@@ -1,0 +1,51 @@
+timestamp,source,metric,value,unit,details
+2026-11-20T20:00:00+05:30,Infrastructure,CPU Usage,24.5,%
+2026-11-20T20:00:00+05:30,Infrastructure,Total RAM,16,GB
+2026-11-20T20:00:00+05:30,Infrastructure,Used RAM,9.2,GB
+2026-11-20T20:00:00+05:30,Infrastructure,RAM Usage,57.5,%
+2026-11-20T20:00:00+05:30,Infrastructure,Total Disk,512,GB
+2026-11-20T20:00:00+05:30,Infrastructure,Used Disk,256,GB
+2026-11-20T20:00:00+05:30,Infrastructure,Disk Usage,50,%
+2026-11-20T20:00:00+05:30,Infrastructure,Bytes Sent,125000000,bytes
+2026-11-20T20:00:00+05:30,Infrastructure,Bytes Received,850000000,bytes
+2026-11-20T20:00:00+05:30,Bandwidth,Upload Rate,12.45,Mbps
+2026-11-20T20:00:00+05:30,Bandwidth,Download Rate,85.32,Mbps
+2026-11-20T20:00:00+05:30,Network Quality,Connectivity,UP,,""
+2026-11-20T20:00:00+05:30,Network Quality,Latency,24.5,ms
+2026-11-20T20:00:00+05:30,Network Quality,Packet Loss,0,%
+2026-11-20T20:00:00+05:30,Network Quality,Jitter,2.3,ms
+2026-11-20T20:00:00+05:30,Network Quality,Packets Sent,5,,
+2026-11-20T20:00:00+05:30,Network Quality,Packets Received,5,,
+2026-11-20T20:00:00+05:30,Windows Security,Security Event,Successful Login,,"{""event_id"":4624,""username"":""admin"",""computer"":""DESKTOP-01""}"
+2026-11-20T20:00:00+05:30,Windows Security,Security Event,Failed Login,,"{""event_id"":4625,""username"":""unknown"",""computer"":""DESKTOP-01""}"
+2026-11-20T20:00:00+05:30,Windows Security,Security Event,User Created,,"{""event_id"":4720,""username"":""testuser"",""computer"":""DESKTOP-01""}"
+2026-11-20T20:00:00+05:30,Windows Security,Security Event,Explicit Credentials,,"{""event_id"":4648,""username"":""admin"",""computer"":""DESKTOP-01""}"
+2026-11-20T20:00:00+05:30,Linux Security,Security Event,Failed Login,,"{""raw_log"":""Failed password for invalid user test from 192.168.1.20""}"
+2026-11-20T20:00:00+05:30,Application,Application Health,200,HTTP Status
+2026-11-20T20:00:00+05:30,Application,Application Logs,Available,,"{""logs"":[{""level"":""INFO"",""message"":""Application running""}]}"
+2026-11-20T20:00:00+05:30,Application,Application Error Counts,Available,,"{""total_errors"":3,""critical_errors"":1}"
+2026-11-20T20:00:00+05:30,Application,Application Response Time,125.45,ms
+2026-11-20T20:00:05+05:30,Infrastructure,CPU Usage,35.2,%
+2026-11-20T20:00:05+05:30,Infrastructure,RAM Usage,59.1,%
+2026-11-20T20:00:05+05:30,Infrastructure,Disk Usage,50.1,%
+2026-11-20T20:00:05+05:30,Bandwidth,Upload Rate,15.21,Mbps
+2026-11-20T20:00:05+05:30,Bandwidth,Download Rate,92.67,Mbps
+2026-11-20T20:00:05+05:30,Network Quality,Connectivity,UP,,
+2026-11-20T20:00:05+05:30,Network Quality,Latency,31.2,ms
+2026-11-20T20:00:05+05:30,Network Quality,Packet Loss,2,%
+2026-11-20T20:00:05+05:30,Network Quality,Jitter,4.8,ms
+2026-11-20T20:00:05+05:30,Application,Application Health,200,HTTP Status
+2026-11-20T20:00:05+05:30,Application,Application Error Counts,Available,,"{""total_errors"":5,""critical_errors"":2}"
+2026-11-20T20:00:05+05:30,Application,Application Response Time,185.6,ms
+2026-11-20T20:00:10+05:30,Infrastructure,CPU Usage,78.6,%
+2026-11-20T20:00:10+05:30,Infrastructure,RAM Usage,82.4,%
+2026-11-20T20:00:10+05:30,Infrastructure,Disk Usage,50.2,%
+2026-11-20T20:00:10+05:30,Bandwidth,Upload Rate,22.45,Mbps
+2026-11-20T20:00:10+05:30,Bandwidth,Download Rate,45.21,Mbps
+2026-11-20T20:00:10+05:30,Network Quality,Connectivity,DOWN,,
+2026-11-20T20:00:10+05:30,Network Quality,Latency,0,ms
+2026-11-20T20:00:10+05:30,Network Quality,Packet Loss,100,%
+2026-11-20T20:00:10+05:30,Network Quality,Jitter,0,ms
+2026-11-20T20:00:10+05:30,Application,Application Health,503,HTTP Status
+2026-11-20T20:00:10+05:30,Application,Application Error Counts,Available,,"{""total_errors"":15,""critical_errors"":5}"
+2026-11-20T20:00:10+05:30,Application,Application Response Time,2500,ms
