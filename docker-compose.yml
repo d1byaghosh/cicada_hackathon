@@ -1,0 +1,21 @@
+# Two "customer environments" (acme in eu-west, globex in ap-south) + one SaaS.
+# Raw data lives only in each collector's private volume; the SaaS container never mounts it.
+services:
+  saas:
+    build: ./saas
+    ports: ["8000:8000"]
+    environment: [DB_PATH=/data/saas.db]
+    volumes: [saas-data:/data]
+  collector-acme:
+    build: ./collector
+    ports: ["9000:9000"]
+    environment: [SAAS_URL=http://saas:8000/ingest, COLLECTOR_TOKEN=acme-secret-token, COLLECTOR_ID=col-acme-01, REGION=eu-west, SOURCE_TZ=Asia/Kolkata, DB_PATH=/data/collector.db, PSEUDO_SALT=acme-local-salt]
+    volumes: [acme-data:/data]
+    depends_on: [saas]
+  collector-globex:
+    build: ./collector
+    ports: ["9001:9000"]
+    environment: [SAAS_URL=http://saas:8000/ingest, COLLECTOR_TOKEN=globex-secret-token, COLLECTOR_ID=col-globex-01, REGION=ap-south, SOURCE_TZ=Asia/Singapore, DB_PATH=/data/collector.db, PSEUDO_SALT=globex-local-salt]
+    volumes: [globex-data:/data]
+    depends_on: [saas]
+volumes: {saas-data: {}, acme-data: {}, globex-data: {}}
