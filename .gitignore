@@ -1,0 +1,13 @@
+﻿
+# Python bytecode & environments
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Runtime SQLite databases & local secrets
+*.db
+*.db-wal
+*.db-shm
+.env
+.env.local

@@ -1,0 +1,1 @@
+"""Tier 1 Local Collector unit and integration tests (Chunks 1–3)."""

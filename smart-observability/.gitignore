@@ -1,0 +1,17 @@
+# Runtime SQLite databases
+*.db
+*.db-wal
+*.db-shm
+
+# Python virtual environments
+.venv/
+
+# Node.js dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Flat telemetry dumps
+*.csv

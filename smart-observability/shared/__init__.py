@@ -1,0 +1,1 @@
+"""Shared Pydantic v2 contracts between Tier 1 (collector/) and Tier 2 (saas/)."""
